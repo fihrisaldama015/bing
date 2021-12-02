@@ -3,6 +3,7 @@ import Navbar from "./Component/Navbar.jsx";
 import Header from "./Component/Header";
 import Article from "./Component/Article";
 import Contact from "./Component/Contact";
+import BackToTop from "./Component/BackToTop";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
               <Header />
               <Article />
               <Contact />
+              <BackToTop />
             </header>
           </Route>
         </Switch>

@@ -15,6 +15,7 @@
 }
 .link {
   transition: 0.3s ease;
+  z-index: 100;
 }
 .link:hover {
   cursor: pointer;
@@ -39,19 +40,21 @@
 }
 .nav-menu {
   cursor: pointer;
+  color: var(--black);
 }
 .menuBar {
   position: absolute;
-  z-index: 5;
+  transform: translateY(-0px);
   background-color: #fff;
   width: 100%;
   top: 75px;
   cursor: pointer;
   left: 0;
+  padding: 40px 0;
   font-size: 24pt;
   height: 200px;
   transition: 0.3s ease;
-  animation: menu 0.3s ease;
+  /* animation: menu 0.3s ease; */
 }
 @keyframes menu {
   0% {

@@ -1,0 +1,16 @@
+.circle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  animation: animasi 1s ease;
+}
+
+@keyframes animasi {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}

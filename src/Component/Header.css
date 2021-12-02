@@ -19,7 +19,6 @@
 }
 .ImgMobile {
   position: relative;
-  z-index: 0;
   padding-bottom: 56.25%;
   transform: translateY(-50px);
 }

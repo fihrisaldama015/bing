@@ -58,13 +58,21 @@ const Navbar = () => {
           <li>
             <img src={LogoUPN} alt="logo" width="55" />
           </li>
-          <li></li>
-          <li class="nav-menu" onClick={toggleMenu}>
-            <IconContext.Provider value={{ size: 30 }}>
-              {menu ? <FcMenu /> : <FcCollapse />}
-            </IconContext.Provider>
-            <div
-              className="menuBar Box-shadow padding"
+          <IconContext.Provider value={{ size: 30 }}>
+            <li class="nav-menu">
+              {/* {menu ? <FcMenu /> : <FcCollapse />} */}
+              <Link to="date" smooth={true} duration={1000}>
+                <FaGraduationCap />
+              </Link>
+            </li>
+            <li class="nav-menu">
+              <Link to="about" smooth={true} duration={1000}>
+                <BsFillPersonFill />
+              </Link>
+            </li>
+          </IconContext.Provider>
+          {/* <div
+              className="menuBar Box-shadow"
               style={{ display: menu ? "none" : "block" }}
             >
               <Link to="date" smooth={true} duration={1000}>
@@ -73,8 +81,7 @@ const Navbar = () => {
               <Link to="about" smooth={true} duration={1000}>
                 <li onClick={closeMenu}>ABOUT US</li>
               </Link>
-            </div>
-          </li>
+            </div> */}
         </ul>
       </nav>
     </div>

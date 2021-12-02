@@ -4,7 +4,7 @@ import "./Header.css";
 const Header = () => {
   return (
     <div>
-      <div className="Card Rounded Card-shadow Header">
+      <div className="Card Rounded Card-shadow Header" id="header">
         <div className="Image Rounded Card-shadow ImgDesktop"></div>
         <div className="Image Rounded Card-shadow ImgMobile"></div>
         <div className="judul">
