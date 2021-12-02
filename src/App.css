@@ -1,38 +1,57 @@
+:root {
+  --black: #282c34;
+  --grey-black: #3c4856;
+  --grey-black-transparent: #3c485688;
+  --blue: #1787cb;
+  --link-blue: #61dafb;
+  --grey: #f7f7fa;
+  --white: #ffffff;
+}
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+}
 .App {
+  margin: 0;
+  padding: 0;
   text-align: center;
+  background-color: var(--grey);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  margin-left: 75px;
   min-height: 100vh;
   display: flex;
+  padding: 20px 0 100px 0;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  gap: 20px;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--black);
 }
 
-.App-link {
-  color: #61dafb;
+.main-judul {
+  color: var(--grey-black);
+  font-size: 24pt;
+}
+.Card {
+  background-color: #fff;
+  margin: 0 2vw;
+  padding: 10px;
+  min-height: 10vh;
+  margin-top: 50px;
+  padding: 20px 10px;
+}
+.Rounded {
+  border-radius: 22px;
+}
+.Card-shadow {
+  box-shadow: 2px 4px 10px 5px rgba(0, 0, 0, 0.05);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* Desktop Mode */
+@media (max-width: 875px) {
+  .App-header {
+    margin-left: 0;
   }
 }
