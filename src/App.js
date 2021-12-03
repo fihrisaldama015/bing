@@ -4,6 +4,8 @@ import Header from "./Component/Header";
 import Article from "./Component/Article";
 import Contact from "./Component/Contact";
 import BackToTop from "./Component/BackToTop";
+import Header2 from "./Component/Header2";
+import Article2 from "./Component/Article2";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
               <h3 className="main-judul">G647</h3>
               <Header />
               <Article />
+              <Header2 />
+              <Article2 />
               <Contact />
               <BackToTop />
             </header>

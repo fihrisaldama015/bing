@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { FaGraduationCap } from "react-icons/fa";
 import { BsFillPersonFill } from "react-icons/bs";
-import { FcMenu } from "react-icons/fc";
-import { FcCollapse } from "react-icons/fc";
+// import { FcMenu } from "react-icons/fc";
+// import { FcCollapse } from "react-icons/fc";
 import { IconContext } from "react-icons";
 import LogoUPN from "./Assets/Logo.png";
 import { Link } from "react-scroll";
@@ -13,10 +13,10 @@ const Navbar = () => {
   // const handleArticle = useCallback(() => history.push("/#date"), [history]);
   // const handleAbout = useCallback(() => history.push("/#about"), [history]);
   const [navbar, setNavbar] = useState(false);
-  const [menu, setMenu] = useState(true);
+  // const [menu, setMenu] = useState(true);
 
-  const toggleMenu = () => setMenu(!menu);
-  const closeMenu = () => setMenu(true);
+  // const toggleMenu = () => setMenu(!menu);
+  // const closeMenu = () => setMenu(true);
   const changePosition = () => {
     if (window.scrollY >= 500) {
       setNavbar(true);

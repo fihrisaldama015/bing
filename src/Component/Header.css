@@ -17,16 +17,28 @@
   background-size: cover;
   max-width: 90%;
 }
+.Shop {
+  margin: 0 auto;
+  background-image: url("./Assets/shop.jpg");
+  background-size: cover;
+  max-width: 90%;
+}
 .ImgMobile {
   position: relative;
   padding-bottom: 56.25%;
+  transform: translateY(-50px);
+}
+.ImgMobileShop {
+  position: relative;
+  z-index: 0;
+  padding-bottom: 70%;
   transform: translateY(-50px);
 }
 .Header {
   margin-top: 50px;
 }
 .judul {
-  font-size: 28pt;
+  font-size: 1em;
 }
 /* Desktop Mode */
 @media (min-width: 875px) {
@@ -35,11 +47,17 @@
     width: 800px;
     height: 450px;
   }
+  .Shop {
+    transform: translateY(0);
+    width: 935px;
+    height: 654px;
+  }
   .Card {
     margin-top: 0;
     padding: 40px 0;
   }
-  .ImgMobile {
+  .ImgMobile,
+  .ImgMobileShop {
     display: none;
   }
   .ImgDesktop {
