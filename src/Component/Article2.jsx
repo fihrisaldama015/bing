@@ -1,5 +1,6 @@
 import React from "react";
 import "./Article.css";
+import Tani from "./Assets/tani.jpg";
 
 const Article2 = () => {
   return (
@@ -50,6 +51,7 @@ const Article2 = () => {
               farmers. With this application, business actors will be greatly
               helped in terms of sales and marketing.
             </p>
+            <img src={Tani} alt="Tanihub" />
             <p>
               There are several applications that resemble the TaniHub
               application. These applications have the same goal, namely to

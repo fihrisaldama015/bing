@@ -102,20 +102,21 @@ const Article = () => {
         </section>
         <section id="credit">
           <div className="info">
-            <p>OUR MENTOR</p>
+            <h1>OUR MENTOR</h1>
           </div>
           <div class="info-content">Dwi Wahyuningtyas, S.Pd., M.A.</div>
           <div className="info">
-            <p>CLASS</p>
+            <h1>CLASS</h1>
           </div>
           <div class="info-content">G647</div>
           <div className="info">
-            <p>CATEGORY</p>
+            <h1>CATEGORY</h1>
           </div>
-          <div class="info-content">
+          <div class="info-content list">
             <ul>
               <li>Technology</li>
               <li>Robot</li>
+              <li>E-Commerce</li>
               <li>Pandemic</li>
               <li>Covid-19</li>
             </ul>

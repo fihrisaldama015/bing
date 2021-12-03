@@ -23,7 +23,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 200px;
+  height: 150px;
+}
+.list {
+  height: 250px;
 }
 .info-content ul li {
   color: var(--black);
@@ -47,24 +50,43 @@
   margin: 40px 0;
   width: 100%;
 }
+#credit h1 {
+  font-size: 1em;
+}
 #article {
   display: flex;
-  margin: 0 20px;
   flex-direction: column;
   gap: 20px;
+}
+#article img {
+  width: 100%;
+  margin: 20px auto;
 }
 .padding {
   padding: 40px;
 }
+
+/* Desktop Mode */
 @media (min-width: 875px) {
   #article {
+    margin: 0 20px;
     flex-direction: row;
+  }
+  .info-content {
+    height: 250px;
+  }
+  #article img {
+    max-width: 500px;
+    margin: 40px;
   }
   #main {
     width: 75%;
   }
   #shop {
     width: 100%;
+  }
+  .padding {
+    padding: 80px;
   }
   #credit {
     width: 25%;

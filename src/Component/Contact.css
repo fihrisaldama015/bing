@@ -16,7 +16,7 @@
   align-items: center;
   justify-content: center;
   /* text-align: justify; */
-  padding: 20px;
+  padding: 40px;
 }
 
 @media (min-width: 875px) {

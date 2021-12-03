@@ -6,8 +6,10 @@
   top: 0;
   left: 0;
   background: var(--blue);
-  color: var(--white);
   transition: 0.3s ease;
+}
+.main-navbar li {
+  color: var(--white);
 }
 .main-navbar:hover {
   width: 200px;
@@ -29,12 +31,17 @@
   position: sticky;
   width: 100%;
   z-index: 100;
+  color: var(--black);
   transition: 0.3s ease;
 }
 .navMobile.active {
   position: fixed;
   transition: 0.3s ease;
+  color: var(--black);
   animation: transisi 0.3s ease;
+  background-color: var(--grey);
+}
+.grey {
 }
 .nav-menu li {
   color: var(--black);
@@ -46,16 +53,27 @@
 .menuBar {
   position: absolute;
   transform: translateY(-0px);
-  background-color: #fff;
+  background-color: var(--grey);
   width: 100%;
   top: 75px;
   cursor: pointer;
   left: 0;
+  color: var(--black);
   padding: 40px 0;
-  font-size: 24pt;
-  height: 200px;
+  font-size: 1.5em;
+  height: 100vh;
   transition: 0.3s ease;
   /* animation: menu 0.3s ease; */
+}
+.menuBar p {
+  color: var(--black);
+  background-color: #fff;
+  padding: 20px 0;
+  width: 75%;
+  margin: 20px auto;
+}
+.toggle {
+  cursor: pointer;
 }
 @keyframes menu {
   0% {
@@ -77,7 +95,7 @@
   display: grid;
   grid-template-columns: 25% 50% 25%;
   align-items: center;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 .Box-shadow {
   box-shadow: 2px 4px 10px 5px rgba(0, 0, 0, 0.05);
@@ -97,5 +115,6 @@ li {
   }
   .navDesktop {
     display: block;
+    z-index: 100;
   }
 }
